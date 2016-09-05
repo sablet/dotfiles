@@ -1,0 +1,8 @@
+#!/bin/zsh -i
+
+dist_path='$HOME/sys.path.append('/path/to/dir')
+
+cd $HOME/git_dir/machine_learning/workspace/keras/fx_lstm
+source /home/nikke/virtualenvs/tensorflow-gpu/bin/activate
+jupyter notebook
+deactivate

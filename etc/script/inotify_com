@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#require apt_install inotify-tools
+while inotifywait -e modify /home/nikke/Dropbox/write/paper/*.tex
+do 
+  cd /home/nikke/Dropbox/write/paper/
+  #halt-on-error stdout free
+  platex -halt-on-error parent 
+
+  if [ $? = 0 ]
+  then
+	platex parent
+	pbibtex parent
+	platex parent
+	  
+	ps ax|grep xdvi |grep perl
+	if [ $? = 1 ]; then
+	  xdvi -watchfile 1 parent.dvi &
+	fi
+	#rm *.aux *.bbl *.fls *.log *.toc *.blg
+	dvipdfmx parent 
+  fi
+  
+done 

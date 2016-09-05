@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=my jupyter
+Terminal=false
+Name=notebook
+Exec=zsh -i -c "jupyter notebook /home/nikke/fx_lstm"
+Type=Application
