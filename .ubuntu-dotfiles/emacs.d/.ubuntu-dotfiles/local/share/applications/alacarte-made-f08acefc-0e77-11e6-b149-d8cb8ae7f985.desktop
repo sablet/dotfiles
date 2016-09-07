@@ -1,6 +1,0 @@
-[Desktop Entry]
-Comment=
-Terminal=false
-Name=keras_ipython.sh
-Exec=/usr/local/bin/keras_ipython.sh
-Type=Application

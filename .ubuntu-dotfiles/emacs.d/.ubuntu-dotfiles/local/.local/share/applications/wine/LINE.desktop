@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=LINE
-Exec=env WINEPREFIX="/home/nikke/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/nikke/.wine/dosdevices/c:/users/Public/Start\\ Menu/LINE.lnk
-Type=Application
-StartupNotify=true
-Path=/home/nikke/.wine/dosdevices/c:/Program Files (x86)/LINE
-Icon=8435_line.0

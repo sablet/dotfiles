@@ -1,1 +1,0 @@
-/home/nikke/Dropbox/.ubuntu-dotfiles/emacs.d
