@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:strictCompatibility>true</em:strictCompatibility>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
+    <em:unpack>true</em:unpack>
+    <em:id>{0b457cAA-602d-484a-8fe7-c1d894a011ba}</em:id>
+    <em:name>FireShot</em:name>
+    <em:version>0.98.89</em:version>
+    <em:type>2</em:type>
+    <em:description>Adds the ability to take a screenshot of the page, edit it and save, copy to clipboard, send to external editor or e-mail it.</em:description>
+    <em:creator>Eugene G. Suslikov</em:creator>
+    <!-- optional items -->
+    <em:homepageURL>http://screenshot-program.com/fireshot</em:homepageURL>
+    <em:iconURL>chrome://fireshot/skin/icon.png</em:iconURL>
+        <em:icon64URL>chrome://fireshot/skin/icon64.png</em:icon64URL>
+    <em:optionsURL>chrome://fireshot/content/fspreferences.xul</em:optionsURL>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>17.0</em:minVersion>
+        <em:maxVersion>49.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+      <!-- TB -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>17.0</em:minVersion>
+        <em:maxVersion>45.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Seamonkey -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.14</em:minVersion>
+        <em:maxVersion>*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+
+  </Description>
+
+</RDF>

@@ -1,0 +1,72 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ClfIy4EGAUAoFnLx6ilfzA==
+SHA1-Digest: ZfYy8xDceM4IT3rEpuCbiIcZhJM=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Fk5NjRIqo/RMBii3TsHi6g==
+SHA1-Digest: vlu9pMNJczQ8JbJXqEbklkb3W+0=
+
+Name: README.txt
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: MxQz+ta+GcEWYmSDX71irA==
+SHA1-Digest: zYtZidrHJRBFIVdtpkfKGwBPDbk=
+
+Name: chrome/fireshot.jar
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: T/QV4NxryWdb+tr1x97GZQ==
+SHA1-Digest: 1Alq0cSzaDRMitBVabPWP697Qcc=
+
+Name: components/fsdllprovider.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0f5yCvK+3pTow4AJckFBbw==
+SHA1-Digest: Esuouj9f7XQO9Gsiu4CrS7d7hQ4=
+
+Name: components/fsobserverdata.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 9Lu22/x3nZpG8V4CqJ/+wQ==
+SHA1-Digest: BAS1LSB8w2g2UKDGf86+aCqlbyo=
+
+Name: defaults/preferences/prefs.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: njl4tCncbk8y8C8qphcLPQ==
+SHA1-Digest: A8wzYmAICdVE2lKbCRcI6ncSRBg=
+
+Name: library/crashreporter.exe
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: y5gwed1gTdN7XHX48W4dJg==
+SHA1-Digest: Pl72elgpUuEhFwIulTyFxS86j/k=
+
+Name: library/fireshot-container.exe
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: qKggcIa37ZSfV3jgw3AonA==
+SHA1-Digest: wDhIVL+31oVptJ/TtAx9xcrY8qA=
+
+Name: library/fireshot-deploy.exe
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: NWMZQ/BYWiAJVuksuRXIYg==
+SHA1-Digest: p1fVq6H4mULIjiy4wvI2WlByyTo=
+
+Name: library/fsaddin.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: BQzhJWUTu5y6bXyD5sG0/g==
+SHA1-Digest: zCzS+sZrHWduyLSqDGWyi6NhKCY=
+
+Name: library/fsaddin64.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: KsRFjjqjK95blD/aqffgtw==
+SHA1-Digest: ozdb9nq/FKaA1yic13nfRoMJkzs=
+
+Name: library/sss.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 8zx1+qIQkV3aDizVOC4LHw==
+SHA1-Digest: We+t2Xg5+rH1DTD4J+SxvDnE9n8=
+
+Name: library/xmllite.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: e/XqdT1MwFa5RioCrFGxYA==
+SHA1-Digest: GoGBxg7JUupqIFazejupv6fC8ZQ=
+

@@ -1,0 +1,128 @@
+<!ENTITY allinonegest.label    "Options for Mouse Gestures Suite">
+<!ENTITY drawgesture.title     "Gesture Drawing Area">
+
+<!ENTITY enable.label          "Enable">
+<!ENTITY enable.mouse             "Mouse gestures">
+<!ENTITY enable.rocker            "Rocker gestures">
+<!ENTITY enable.wheelscroll       "Scroll wheel navigation">
+<!ENTITY enable.autoscroll        "Middle button scrolling">
+<!ENTITY enable.tabbarscroll      "Scroll wheel in tab bar">
+<!ENTITY enable.linkTooltip       "Link tooltip">
+
+<!ENTITY tab.general              "General Preferences">
+<!ENTITY tab.customization        "Gestures Customization">
+<!ENTITY tab.advanced1            "Advanced Prefs #1">
+<!ENTITY tab.advanced2            "Advanced Prefs #2">
+
+<!ENTITY customize.function       "Function">
+<!ENTITY customize.gesture        "Gesture">
+<!ENTITY customize.enable         "Enable/Disable gesture">
+<!ENTITY customize.clear          "Clear gestures">
+<!ENTITY customize.edit           "Edit gesture">
+<!ENTITY customize.swap           "Swap gestures">
+<!ENTITY customize.add            "Add gesture">
+<!ENTITY customize.edfunc         "Edit function">
+<!ENTITY customize.undo           "Undo">
+<!ENTITY customize.restore        "Restore defaults">
+<!ENTITY customize.enter          "or Enter (short format e.g. LRUD) the new gesture:">
+<!ENTITY customize.draw           "Draw">
+<!ENTITY customize.swaptxt        "Click on a new row to swap (new row gesture &lt;-&gt; current row gesture)">
+<!ENTITY customize.edfunctxt      "Click on the function to be assigned to this predefined gesture">
+<!ENTITY customize.addCustomFun   "Add Custom Function">
+<!ENTITY customize.deleteCustomFun "Remove Custom Function">
+<!ENTITY customize.apply          "OK">
+
+<!ENTITY mousegest.label       "Mouse Gestures: Prefs">
+<!ENTITY trails.enable             "Enable Gesture Trails">
+<!ENTITY trails.color              "Trail Color">
+<!ENTITY trails.size               "Trail Size">
+<!ENTITY trails.smooth             "Smooth (slower on old hardware)">
+<!ENTITY mousegest.sensitivity     "Movement sensitivity (pixels):">
+<!ENTITY mousegest.timeout         "Gesture timeout (ms):">
+<!ENTITY mousegest.showGestInfo    "Show gesture info while drawing">
+
+<!ENTITY linktooltip.label     "Link Tooltip: Prefs">
+<!ENTITY linktooltip.shift         "Depress Shift key to show">
+<!ENTITY linktooltip.delay         "Delay (ms) before showing:">
+<!ENTITY linktooltip.duration      "Time (ms) the tooltip is shown:">
+
+<!ENTITY wheel.label           "Scroll Wheel Navigation: Select">
+<!ENTITY wheel.gestures            "Perform Gesture Actions">
+<!ENTITY wheel.historyNav          "Navigate through History">
+<!ENTITY wheel.tabNav              "Navigate through Tabs">
+<!ENTITY wheel.historyOrTab        "History / Tabs based on initial rotation">
+<!ENTITY wheel.historyIfCw         "Backward (toward the user): History">
+<!ENTITY wheel.showTabsPopup       "Show tab list in popup">
+
+<!ENTITY autoscroll.label      "Middle Button Scrolling: Select">
+<!ENTITY autoscroll.AiO            "Mouse Gestures autoscroll">
+<!ENTITY autoscroll.native         "Native autoscroll">
+<!ENTITY autoscroll.aiograb        "MG autoscroll + Grab and Drag">
+<!ENTITY autoscroll.grab           "Grab and Drag scrolling">
+
+<!ENTITY about.label           "About">
+<!ENTITY about.version             "Version">
+<!ENTITY about.provider1           "Originally based on All-in-One Gestures by M. Boullet">
+<!ENTITY about.provider2           "Modified and further developed by Lemon Juice">
+
+<!ENTITY mousebutton.label     "Trigger button for Mouse Gestures and Scroll Wheel Navigation">
+<!ENTITY mousebutton.left          "Left">
+<!ENTITY mousebutton.middle        "Middle">
+<!ENTITY mousebutton.right         "Right">
+<!ENTITY mousebutton.leftbutt      "Left button:">
+<!ENTITY mousebutton.altkey        "Don't start a gesture when the Alt key is depressed">
+<!ENTITY mousebutton.leftdefault   "Default mouse action is performed as well">
+
+<!ENTITY aioMMBScrolling.label "Middle Button Scrolling">
+<!ENTITY aioMMB.evenOnLink         "Start scrolling when middle-clicking over a link">
+<!ENTITY aioMMB.marker             "Autoscroll: Don't show the marker">
+<!ENTITY aioMMB.cursor             "Autoscroll: Show dedicated mouse cursor">
+<!ENTITY aioMMB.panning            "Panning does not exit when the mouse is inside the marker">
+<!ENTITY aioMMB.paste              "Middle-click pastes in text boxes">
+<!ENTITY aioMMB.noHorizScroll      "Grab and Drag: Don't scroll horizontally">
+<!ENTITY aioMMB.grabNdragmode      "Grab and Drag: Acrobat Reader mode (instead of Scrollbar mode)">
+<!ENTITY aioMMB.refreshrate        "Autoscroll Refresh Rate:">
+<!ENTITY aioMMB.normal             "Normal">
+<!ENTITY aioMMB.fast               "Fast">
+<!ENTITY aioMMB.superfast          "Faster">
+<!ENTITY aioMMB.continue           "Autoscroll: Keep scrolling after releasing middle button">
+<!ENTITY aioMMB.speed              "Autoscroll Speed:">
+
+<!ENTITY aioAction.label       "Mouse Gesture Actions">
+<!ENTITY aioAction.singlewindow    "'Open Links in Windows': Single new window with tabs">
+<!ENTITY aioAction.openLinkInNew   "'Open new Tab/Window' opens link under performed gesture">
+<!ENTITY aioAction.blankTabNextToCurrent "Open new blank tab next to current one">
+<!ENTITY aioAction.neverwarn       "'Close all other Tabs': Never warn">
+<!ENTITY aioAction.goUpAction      "'Go Up to parent ...' / 'Load Home Page': Open in new tab">
+<!ENTITY aioAction.crispResize     "Turn off smoothing when resizing images">
+<!ENTITY aioAction.nextprev        "'Follow ... Link': Strings to be searched for (| separated)">
+<!ENTITY aioAction.nextlink        "Follow Next Link:">
+<!ENTITY aioAction.prevlink        "Follow Previous Link:">
+<!ENTITY aioAction.rockermode      "Rocker &amp; Scrollwheel gestures: Allow repetition for actions that load pages">
+
+<!ENTITY scriptBlocking.label  "Script blocking on web pages">
+<!ENTITY siteSpecific.label        "Site specific behavior">
+<!ENTITY siteSpecific.action       "Action">
+<!ENTITY siteSpecific.url          "URL">
+<!ENTITY siteSpecificDialog.title  "Site Rule">
+<!ENTITY siteSpecificDialog.url    "URL (wildcard characters * are allowed)">
+<!ENTITY siteSpecificDialog.insertSite "Insert rule for recently viewed site">
+<!ENTITY siteSpecificDialog.insertPage "Insert rule for recently viewed page">
+<!ENTITY scriptBlocking.disableClickHeat "Disable ClickHeat scripts, which cause delays and gesture detection problems on web pages">
+
+<!ENTITY aioTabscroll.label    "Tab scrolling">
+<!ENTITY aioTabscroll.revScroll    "Scroll tabs to the left when the wheel is rotated backward">
+
+<!ENTITY aioAddRule.label "Add Rule">
+<!ENTITY aioEditRule.label "Edit Rule">
+<!ENTITY aioDeleteRule.label "Delete">
+
+<!ENTITY aioManageSettings.label "Settings Management">
+<!ENTITY aioImport.label "Import Settings">
+<!ENTITY aioExport.label "Export Settings">
+<!ENTITY aioRestore.label "Restore Default Settings">
+
+<!ENTITY flipper.title         "Digit Flipper Schema Builder">
+<!ENTITY flipper.label         "Select the numerical part of the document URL that varies.">
+
+

@@ -1,0 +1,443 @@
+<?xml version="1.0"?> 
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="allinonegest.css" type="text/css"?>
+
+<!DOCTYPE dialog [
+<!ENTITY % brandDTD SYSTEM "chrome://global/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % allinonegestDTD SYSTEM "chrome://mgsuite/locale/allinonegest.dtd" >
+%allinonegestDTD;
+]>
+
+<dialog id="allInOnePref"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      title="&allinonegest.label;"
+      buttons="accept, cancel, help"
+      onload="init();"
+      ondialogaccept="return savePrefs();"
+      ondialogcancel="saveGesturesTableScroll()"
+      ondialoghelp="openHelp();"
+      persist="width height screenX screenY">
+
+<script type="application/x-javascript" src="../common.js"/>
+<script type="application/x-javascript" src="../defaultGestureString.js"/>
+<script type="application/x-javascript" src="fileSettingsIO.js"/>
+<script type="application/x-javascript" src="customize.js"/>
+<script type="application/x-javascript" src="chrome://global/content/globalOverlay.js"/>
+<script type="application/x-javascript" src="aioOptions.js"/>
+<script type="application/x-javascript" src="aioEditRule.js"/>
+
+<stringbundleset id="stringbundleset"> 
+  <stringbundle id="allinonegestbundle" src="chrome://mgsuite/locale/allinonegest.properties"/>
+  <stringbundle id="brandbundle" src="chrome://global/locale/brand.properties"/>
+</stringbundleset>
+
+<tabbox flex="1" style="overflow:auto;">
+ <tabs>
+   <tab label="&tab.general;" />
+   <tab label="&tab.customization;" />
+   <tab label="&tab.advanced1;" />
+   <tab label="&tab.advanced2;" />
+ </tabs>
+ <tabpanels flex="1" id="tabpanId">
+  <tabpanel orient="vertical">
+   <spacer flex="1"/>
+   <hbox>
+   <spacer flex="1"/>
+   <vbox>
+   <groupbox orient="horizontal">
+     <caption label="&enable.label;"/>
+     <vbox>
+       <checkbox id="mouse" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.mouse" label="&enable.mouse;" oncommand="doEnabling();"/>
+       <checkbox id="rocker" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.rocking" label="&enable.rocker;" oncommand="doEnabling();"/>
+       <checkbox id="tabBar" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.tabBar" label="&enable.tabbarscroll;" oncommand="doEnabling();"/>
+     </vbox>
+     <vbox>
+       <checkbox id="wheelscroll" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.wheelscrolling" label="&enable.wheelscroll;" oncommand="doEnabling();"/>
+       <checkbox id="autoscroll" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.autoscrolling2" label="&enable.autoscroll;" oncommand="doEnabling();"/>
+       <checkbox id="linkTooltip" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.showLinkTooltip" label="&enable.linkTooltip;" oncommand="doEnabling();"/>
+     </vbox>
+   </groupbox>
+   <hbox>
+     <groupbox orient="horizontal" flex="1">
+      <caption label="&mousegest.label;"/>
+      <vbox>
+       <checkbox id="trailId" type="checkbox" pref="true" preftype="bool" label="&trails.enable;"
+          prefstring="allinonegest.gestureTrails" oncommand="doEnabling();"/>
+       <hbox align="center" class="aio-dblh">
+        <label id="trailColorId" class="aio-indent" value="&trails.color;"/>
+        <spacer flex="1"/>
+        <colorpicker type="button" id="trailPickerId" onchange="changeTrace(0)"/>
+       </hbox>
+       <hbox align="center">
+        <label id="trailSizeId" class="aio-indent" value="&trails.size;"/>
+        <spacer flex="100"/>
+        <button id="minusId" class="aio-smallButton" image="minus.png" oncommand="changeTrace(-1)"/>
+        <image id="traitId" class="aio-border" src="transp.png"/>
+        <button id="plusId" class="aio-smallButton" image="plus.png" oncommand="changeTrace(1)"/> 
+       </hbox>
+       <checkbox id="smoothId" type="checkbox" pref="true" preftype="bool" label="&trails.smooth;"
+          prefstring="allinonegest.smoothTrail" oncommand="doEnabling();" class="aio-indent"/>
+       <bbox>
+        <label id="gridLabelId" value="&mousegest.sensitivity;"/>
+        <textbox type="number" min="3" max="50" size="2" id="gridId" preftype="int" prefstring="allinonegest.grid" />
+       </bbox>
+       <bbox>
+        <checkbox id="drawnGestInfoId" type="checkbox" pref="true" preftype="bool" label="&mousegest.showGestInfo;"
+          prefstring="allinonegest.drawnGestInfo"/>
+       </bbox>
+      </vbox>
+     </groupbox>
+     <groupbox orient="horizontal" flex="1">
+      <caption label="&linktooltip.label;"/>
+      <vbox>
+       <checkbox id="tooltipShiftId" type="checkbox" pref="true" preftype="bool" label="&linktooltip.shift;"
+          prefstring="allinonegest.shiftForTitle"  oncommand="doEnabling();"/>
+       <hbox align="center">
+        <label id="tooltipDelayId" value="&linktooltip.delay;"/>
+        <spacer flex="1"/>
+        <menulist id="delaydropdownId">
+           <menupopup>
+              <menuitem label="250" />
+              <menuitem label="500" />
+              <menuitem label="750" />
+              <menuitem label="1000" />
+              <menuitem label="1250" />
+	      <menuitem label="1500" />
+              <menuitem label="2000" />
+	      <menuitem label="2500" />
+	      <menuitem label="3000" />
+              <menuitem label="4000" />
+           </menupopup>
+        </menulist>
+       </hbox>
+       <hbox align="center">
+        <label id="tooltipDisplayId" value="&linktooltip.duration;"/>
+        <spacer flex="1"/>
+        <menulist id="durationdropdownId">
+           <menupopup>
+              <menuitem label="2000" />
+              <menuitem label="3000" />
+              <menuitem label="4000" />
+              <menuitem label="5000" />
+              <menuitem label="6000" />
+	      <menuitem label="7000" />
+              <menuitem label="8000" />
+           </menupopup>
+        </menulist>
+       </hbox>
+      </vbox>
+     </groupbox>
+   </hbox>
+   <hbox>
+     <groupbox orient="horizontal" flex="1">
+      <caption label="&wheel.label;"/>
+      <vbox>
+        <radiogroup id="wheelScrollOptions" prefstring="allinonegest.wheelpref2">
+          <radio id="wheelScrollOptions0" value="0" label="&wheel.gestures;"
+          oncommand="checkWheelRocker();" />
+          <radio id="wheelScrollOptions1" value="1" label="&wheel.historyNav;"
+          oncommand="checkWheelRocker();" selected="true" />
+          <radio id="wheelScrollOptions2" value="2" label="&wheel.tabNav;"
+          oncommand="checkWheelRocker();" />
+          <radio id="wheelScrollOptions3" value="3" label="&wheel.historyOrTab;"
+          oncommand="checkWheelRocker();" />
+        </radiogroup>
+        <checkbox id="wheelDirection" class="indent" type="checkbox" pref="true" preftype="bool"
+        prefstring="allinonegest.wheelHistoryIfCw" label="&wheel.historyIfCw;" />
+        <checkbox id="showTabsPopup" type="checkbox" pref="true" preftype="bool"
+        prefstring="allinonegest.showTabsPopup" label="&wheel.showTabsPopup;" />
+      </vbox>
+     </groupbox>
+     <groupbox orient="horizontal" flex="1">
+      <caption label="&autoscroll.label;"/>
+      <vbox>
+        <radiogroup id="autoscrollOptions" prefstring="allinonegest.autoscrollpref">
+          <radio id="autoscrollOptions0" value="0" label="&autoscroll.AiO;"
+          oncommand="doEnabling();" selected="true" />
+          <radio id="autoscrollOptions1" value="1" label="&autoscroll.native;"
+          oncommand="doEnabling();" />
+          <radio id="autoscrollOptions2" value="2" label="&autoscroll.aiograb;"
+          oncommand="doEnabling();" />
+          <radio id="autoscrollOptions3" value="3" label="&autoscroll.grab;"
+          oncommand="doEnabling();" />
+        </radiogroup>
+      </vbox>
+     </groupbox>
+   </hbox>
+   <groupbox>
+     <caption label="&about.label;"/>
+     <hbox flex="1" align="center">
+        <label value="&about.provider1;"/>
+        <spring flex="1"/>
+        <label id="versId" value="&about.version;"/>
+     </hbox>
+     <spacer flex="1"/>
+     <hbox flex="1" align="center">
+        <vbox>
+          <label value="&about.provider2;"/>
+        </vbox>
+     </hbox>
+   </groupbox>
+   </vbox>
+   <spacer flex="1"/>
+   </hbox>
+   <spacer flex="10"/>
+  </tabpanel>
+
+  <tabpanel orient="vertical">
+   <vbox flex="50">
+      <tree id="gesttree" hidecolumnpicker="true" flex="1"
+          onselect="selectionInTree();"
+          onmousedown="mouseDownInTree(event);"
+          ondblclick="dblClickInTree(event);">
+        <treecols>
+          <treecol id="infoColId" persist="width" class="treecol-image infoColHeader"
+                   fixed="true" tooltiptext="Info about actions" overflow="true"/>
+          <splitter class="tree-splitter"/>
+          <treecol persist="width" flex="8" id="functionId" label="&customize.function;"/>
+          <splitter class="tree-splitter"/>
+          <treecol id="enabledColId" persist="width" class="treecol-image enableColHeader"
+                   fixed="true" cycler="true" tooltiptext="&customize.enable;"/>
+          <splitter class="tree-splitter"/>
+          <treecol persist="width" flex="6" id="gestTextId" label="&customize.gesture;"/>
+        </treecols>
+        <treechildren flex="1"/>
+      </tree>
+      <tooltip id="infoPopup" orient="vertical" noautohide="true" position="topleft" onpopuphidden="infoPopupHidden(event)">
+       <html:div id="infoPopupContent" type="content"/>
+      </tooltip>
+   </vbox>
+   <spacer flex="1"/>
+   <vbox>
+     <hbox pack="center" flex="1">
+       <button label="&customize.clear;" id="clearId" oncommand="clearRows();" />
+       <button label="&customize.edit;" id="editId" oncommand="editCurrentRow(false);" />
+       <button label="&customize.swap;" id="swapId" oncommand="swapTwoRows();" />
+       <button label="&customize.add;" id="addId" hidden="true" /><!-- dummy button only for getting label by js -->
+       <button label="&customize.edfunc;" id="edfuncId" oncommand="editFunction();" />
+       <button label="&customize.undo;" id="undoId" oncommand="performUndo();" />
+     </hbox>
+   </vbox>
+   <vbox>
+     <hbox align="end" flex="1" height="30">
+       <vbox id="customEditFunc" hidden="true">
+        <label value="&customize.edfunctxt;" />
+       </vbox>
+       <vbox id="customSwap" hidden="true">
+        <label value="&customize.swaptxt;" />
+       </vbox>
+       <hbox id="customGesturesControl" flex="1" pack="center">
+        <button label="&customize.addCustomFun;" id="addCustom" oncommand="addCustomFunction();" />
+        <button label="&customize.deleteCustomFun;" id="removeCustom" oncommand="removeCustomFunctions();" />
+        <button label="&customize.restore;" id="restoreId" oncommand="restoreDefaultGestures();" style="margin-left: 5em"/>
+       </hbox>
+ <!--  <vbox id="customEdit" flex="1">
+         <hbox align="center" flex="1">
+          <button label="&customize.draw;" oncommand="openPlayWindow();" />
+          <label value="&customize.enter;" control="customTextbox"/>
+          <textbox id="customTextbox" class="padded" value="" flex="1"/>
+          <spacer flex="1" />
+          <button label="&customize.apply;" oncommand="changeGestureData();" />
+         </hbox>
+       </vbox>-->
+     </hbox>
+   </vbox>  
+  </tabpanel>
+
+  <tabpanel orient="vertical">
+   <spacer flex="1"/>
+   <hbox>
+   <spacer flex="1"/>
+   <vbox>
+   <groupbox orient="horizontal">
+     <caption label="&mousebutton.label;"/>
+     <vbox flex="1">
+      <hbox pack="center">
+      <vbox>
+       <radiogroup id="mousebuttOptions" prefstring="allinonegest.mousebuttonpref"
+                 orient="horizontal">
+        <radio minwidth="115" id="mousebutt0" value="0" label="&mousebutton.left;"
+        oncommand="doEnabling();" selected="true" />
+        <radio minwidth="115" id="mousebutt1" value="1" label="&mousebutton.middle;"
+        oncommand="doEnabling();" />
+        <radio id="mousebutt2" value="2" label="&mousebutton.right;" oncommand="doEnabling();" />
+       </radiogroup>
+      </vbox>
+      </hbox>
+      <separator orient="horizontal" />
+      <checkbox id="noAltGestId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.noAltGest" label="&mousebutton.altkey;" oncommand="doEnabling();" />
+      <label id="leftlabelId" value="&mousebutton.leftbutt;" />
+      <checkbox id="leftdefaultId" class="indent" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.leftDefault" label="&mousebutton.leftdefault;" />
+     </vbox>
+   </groupbox>
+   <groupbox orient="horizontal">
+     <caption label="&aioAction.label;"/>
+     <vbox>
+       <checkbox id="openlinksId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.singleWindow" label="&aioAction.singlewindow;" />
+       <checkbox id="openLinkInNewId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.openLinkInNew" label="&aioAction.openLinkInNew;" />
+       <checkbox id="blankTabNextToCurrentId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.blankTabNextToCurrent" label="&aioAction.blankTabNextToCurrent;" />
+       <checkbox id="goUpId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.goUpInNewTab" label="&aioAction.goUpAction;" />
+       <checkbox id="crispResizeId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.crispResize" label="&aioAction.crispResize;" />
+       <checkbox id="rockerModeId" type="checkbox" label="&aioAction.rockermode;" />
+       <separator orient="horizontal" />
+       <label id="nextprevId" value="&aioAction.nextprev;" />
+       <grid class="indent" flex="1">
+         <columns>
+           <column/>
+           <column flex="1"/>
+         </columns>
+         <rows>
+            <row align="center">
+               <hbox pack="end">
+                  <label id="nextlinkId" value="&aioAction.nextlink;" />
+               </hbox>
+               <hbox align="center">
+                  <textbox id="nextsStringId" flex="1" />
+               </hbox>
+            </row>
+            <row align="center">
+               <hbox pack="end">
+                  <label id="prevlinkId" value="&aioAction.prevlink;" />
+               </hbox>
+               <hbox align="center">
+                  <textbox id="prevsStringId" flex="1" />
+               </hbox>
+            </row>
+         </rows>
+       </grid>
+     </vbox>
+   </groupbox>
+   <groupbox orient="horizontal">
+     <caption label="&aioTabscroll.label;"/>
+     <vbox>
+       <checkbox id="reverseId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.reverseScrolling" label="&aioTabscroll.revScroll;" />
+     </vbox>
+   </groupbox>
+   <groupbox orient="horizontal">
+     <caption label="&scriptBlocking.label;"/>
+     <vbox>
+       <checkbox id="disableClickHeatId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.disableClickHeat" label="&scriptBlocking.disableClickHeat;" />
+     </vbox>
+   </groupbox>
+
+   <spring flex="1"/>
+   </vbox>
+   <spacer flex="1"/>
+   </hbox>
+   <spacer flex="10"/>
+  </tabpanel>
+
+  <tabpanel orient="vertical">
+   <spacer flex="1"/>
+   <hbox>
+   <spacer flex="1"/>
+   <vbox>
+   <groupbox orient="horizontal">
+     <caption label="&aioMMBScrolling.label;"/>
+     <vbox flex="1">
+       <checkbox id="evenOnLinkId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.evenOnLink" label="&aioMMB.evenOnLink;" />
+       <checkbox id="markerId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.autoscrollNoMarker" label="&aioMMB.marker;" oncommand="doEnabling();" />
+       <checkbox id="cursorId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.autoscrollCursor" label="&aioMMB.cursor;" />
+       <checkbox id="autoscrollContinueId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.autoscrollContinue" label="&aioMMB.continue;" />
+       <checkbox id="panningId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.panning" label="&aioMMB.panning;" />
+       <checkbox id="pasteId" type="checkbox" pref="true" preftype="bool"
+           prefstring="middlemouse.paste" label="&aioMMB.paste;" />
+       <checkbox id="grabHorizId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.noHorizScroll" label="&aioMMB.noHorizScroll;" />
+       <checkbox id="grabModeId" type="checkbox" pref="true" preftype="bool"
+           prefstring="allinonegest.dragAlaAcrobat" label="&aioMMB.grabNdragmode;" />
+      <separator orient="horizontal" />
+      <bbox>
+        <label id="refreshrateId" value="&aioMMB.refreshrate;" />
+        <vbox>
+          <radiogroup id="scrollrateOptions" prefstring="allinonegest.autoscrollRate" orient="horizontal">
+           <radio id="scrollrate0" value="0" label="&aioMMB.normal;" />
+           <radio id="scrollrate1" value="1" label="&aioMMB.fast;" />
+           <radio id="scrollrate2" value="2" label="&aioMMB.superfast;" />
+          </radiogroup>
+        </vbox>
+      </bbox>
+      <bbox>
+        <label value="&aioMMB.speed;" />
+        <menulist id="autoscrollSpeedId">
+           <menupopup>
+              <menuitem label="1/16" value="0.0625" />
+              <menuitem label="1/8" value="0.125" />
+              <menuitem label="1/4" value="0.25" />
+              <menuitem label="1/2" value="0.5" />
+              <menuitem label="x1" value="1" />
+              <menuitem label="x2" value="2" />
+              <menuitem label="x4" value="4" />
+              <menuitem label="x8" value="8" />
+           </menupopup>
+        </menulist>
+      </bbox>
+     </vbox>
+   </groupbox>
+   
+  <groupbox orient="horizontal">
+    <caption label="&siteSpecific.label;"/>
+    <listbox rows="6" class="list" id="siteList" seltype="multiple" width="450" ondblclick="editRule();">
+      <listcols>
+        <listcol width="320"/>
+        <listcol width="130"/>
+      </listcols>
+      <listhead>
+        <listheader label="&siteSpecific.url;"/>
+        <listheader label="&siteSpecific.action;"/>
+      </listhead>
+<!-- example: <listitem>
+        <listcell label="mysite.com/*" />
+        <listcell label="prioritize gestures" value="P" />
+      </listitem>
+-->
+    </listbox>
+    
+    <vbox style="margin-top: 25px">
+     <button label="&aioAddRule.label;" oncommand="addRule();" />
+     <button label="&aioEditRule.label;" oncommand="editRule();" />
+     <button label="&aioDeleteRule.label;" oncommand="deleteRule();" />
+    </vbox>
+  </groupbox>
+   
+   <groupbox orient="horizontal">
+     <caption label="&aioManageSettings.label;"/>
+     <hbox>
+       <button label="&aioImport.label;" oncommand="importSettings();" />
+       <button label="&aioExport.label;" oncommand="exportSettings();" />
+       <button label="&aioRestore.label;" oncommand="restoreDefaultSettings();" />
+     </hbox>
+   </groupbox>
+   
+   <spring flex="1"/>
+   </vbox>
+   <spacer flex="1"/>
+   </hbox>
+   <spacer flex="10"/>
+  </tabpanel>
+  </tabpanels>
+</tabbox>
+</dialog>

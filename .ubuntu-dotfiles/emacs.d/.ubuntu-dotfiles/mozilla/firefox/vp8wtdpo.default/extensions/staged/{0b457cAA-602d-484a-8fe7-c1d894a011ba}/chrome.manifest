@@ -1,0 +1,35 @@
+content        fireshot         jar:chrome/fireshot.jar!/content/
+overlay        chrome://browser/content/browser.xul             chrome://fireshot/content/fsoverlay.xul
+overlay        chrome://navigator/content/navigator.xul         chrome://fireshot/content/fsoverlay.xul
+overlay        chrome://messenger/content/mailWindowOverlay.xul chrome://fireshot/content/tboverlay_v3.xul
+
+skin           fireshot        classic/1.0        jar:chrome/fireshot.jar!/skin/
+style          chrome://global/content/customizeToolbar.xul        chrome://fireshot/skin/overlay.css
+locale         fireshot        ru-RU        jar:chrome/fireshot.jar!/locale/ru-RU/
+locale         fireshot        en-US        jar:chrome/fireshot.jar!/locale/en-US/
+locale         fireshot        nl        jar:chrome/fireshot.jar!/locale/nl/
+locale         fireshot        pl-PL        jar:chrome/fireshot.jar!/locale/pl-PL/
+locale         fireshot        fr        jar:chrome/fireshot.jar!/locale/fr/
+locale         fireshot        da-DK        jar:chrome/fireshot.jar!/locale/da-DK/
+locale         fireshot        de        jar:chrome/fireshot.jar!/locale/de/
+locale         fireshot        ko-KR        jar:chrome/fireshot.jar!/locale/ko-KR/
+locale         fireshot        pt-BR        jar:chrome/fireshot.jar!/locale/pt-BR/
+locale         fireshot        pt-PT        jar:chrome/fireshot.jar!/locale/pt-PT/
+locale         fireshot        fi-FI        jar:chrome/fireshot.jar!/locale/fi-FI/
+locale         fireshot        vi-VN        jar:chrome/fireshot.jar!/locale/vi-VN/
+locale         fireshot        zh-CN        jar:chrome/fireshot.jar!/locale/zh-CN/
+locale         fireshot        zh-TW        jar:chrome/fireshot.jar!/locale/zh-TW/
+locale         fireshot        es-ES        jar:chrome/fireshot.jar!/locale/es-ES/
+locale         fireshot        sv-SE        jar:chrome/fireshot.jar!/locale/sv-SE/
+locale         fireshot        ja-JP        jar:chrome/fireshot.jar!/locale/ja-JP/
+locale         fireshot        tr           jar:chrome/fireshot.jar!/locale/tr/
+locale         fireshot        it           jar:chrome/fireshot.jar!/locale/it/
+locale         fireshot        cs           jar:chrome/fireshot.jar!/locale/cs/
+locale         fireshot        sl           jar:chrome/fireshot.jar!/locale/sl/
+
+
+component {4266AF1E-981D-11E1-9D7B-0B916188709B} components/fsdllprovider.js
+contract @screenshot-program.com/FSDLLProvider;1 {4266AF1E-981D-11E1-9D7B-0B916188709B}
+
+component {8998EE52-98FD-11E1-8C2D-B1F16088709B} components/fsobserverdata.js
+contract @screenshot-program.com/FSObserverData;1 {8998EE52-98FD-11E1-8C2D-B1F16088709B}
