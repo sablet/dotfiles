@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Uninstall Kindle
-Exec=env WINEPREFIX="/home/nikke/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/nikke/.wine/dosdevices/c:/users/nikke/Start\\ Menu/Programs/Amazon/Amazon\\ Kindle/Uninstall\\ Kindle.lnk
-Type=Application
-StartupNotify=true
-Path=/home/nikke/.wine/dosdevices/c:/Program Files/Amazon/Kindle/content
-Icon=6E9B_uninstall.0
