@@ -1,3 +1,6 @@
 undohist/*
 auto-save-list/*
 .python-environments/*
+session*
+*conflict*
+*競合*

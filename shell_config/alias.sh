@@ -43,7 +43,8 @@ elif which putclip >/dev/null 2>&1 ; then
 fi
 
 # ディストリビューション別の設定
-case ${dist_info} in
+
+case $(uname -a) in
 		*Arch*)
 				alias pac_install='sudo pacman -S'
 				;;
