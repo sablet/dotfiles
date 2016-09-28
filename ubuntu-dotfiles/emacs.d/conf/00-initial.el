@@ -49,7 +49,7 @@
 
 
 ;;proxy設定
-(unless (eq (string-to-char (shell-command-to-string "ifconfig|grep 10.236.105.255")) 0)
-	(setq url-proxy-services
-				'(("http" . "proxy.kuins.net:8080")
-					("https" . "proxy.kuins.net:8080"))))
+;;(unless (eq (string-to-char (shell-command-to-string "ifconfig|grep 10.236.105.255")) 0)
+;;	(setq url-proxy-services
+;;				'(("http" . "proxy.kuins.net:8080")
+;;					("https" . "proxy.kuins.net:8080"))))

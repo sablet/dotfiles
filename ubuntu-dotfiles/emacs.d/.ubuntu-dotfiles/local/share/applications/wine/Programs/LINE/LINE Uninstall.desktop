@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=LINE Uninstall
-Exec=env WINEPREFIX="/home/nikke/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/nikke/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/LINE/LINE\\ Uninstall.lnk
-Type=Application
-StartupNotify=true
-Path=/home/nikke/.wine/dosdevices/c:/Program Files (x86)/LINE
-Icon=A9EC_LineUnInst.0
