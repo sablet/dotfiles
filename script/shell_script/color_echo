@@ -1,0 +1,10 @@
+#!/bin/bash
+
+: ${2:?}
+case $1 in
+	  red)  col=31;;
+		blue) col=34;;
+		green) col=32;;
+		*) exit 1;;
+esac
+echo -e "\e[${col}m $2 \e[m"

@@ -1,5 +1,5 @@
 ;;defalut path: ~/emacs.d
-(cd "~/Dropbox/.ubuntu-dotfiles")
+(cd "~/git_dir")
 
 ;;menu,toolbar undisplay  default:0
 (menu-bar-mode -1)

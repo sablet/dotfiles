@@ -1,0 +1,11 @@
+GIMP Palette
+Name: History
+#
+# ColorZilla History Palette
+# CZEditable
+#
+255 255 255	strong
+47 132 234	a
+255 255 255	div#main
+49 67 76	toolbarbutton.toolbarbutton-1 chromeclass-toolbar-additional cz-toolbarbutton-fix platform-linux#colorzilla-navbar-button
+110 125 143	toolbarbutton.toolbarbutton-1 badged-button#PanelUI-menu-button

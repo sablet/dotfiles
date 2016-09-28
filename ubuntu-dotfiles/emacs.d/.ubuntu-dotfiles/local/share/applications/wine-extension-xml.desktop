@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wine Internet Explorer
+MimeType=application/xml;
+Exec=env WINEPREFIX="/home/nikke/.wine" wine start /ProgIDOpen xmlfile %f
+NoDisplay=true
+StartupNotify=true
+Icon=FB4C_iexplore.0

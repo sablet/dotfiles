@@ -1,0 +1,66 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+#aioscrollerNS {
+   height: 28px;
+   width: 28px;
+   border: none;
+   padding: 0;
+   background-image: url("chrome://mgsuite/content/autoscroll_v.png");
+   background-color: transparent;
+   cursor: n-resize;
+   -moz-appearance: none;
+ }
+#aioscrollerEW {
+   height: 28px;
+   width: 28px;
+   border: none;
+   padding: 0;
+   background-image: url("chrome://mgsuite/content/autoscroll_h.png");
+   background-color: transparent;
+   cursor: e-resize;
+   -moz-appearance: none;
+ }
+ #aioscrollerNSEW {
+   height: 28px;
+   width: 28px;
+   border: none;
+   padding: 0;
+   background-image: url("chrome://mgsuite/content/autoscroll_all.png");
+   background-color: transparent;
+   cursor: move;
+   -moz-appearance: none;
+ }
+ .menuitem-iconic[aioBold] {
+   font-weight: bold;
+ }
+ .menuitem-iconic[aioUnderline] {
+   text-decoration: underline;
+ }
+ #aioWheelPopup {
+   border: 1px solid #888;
+   padding: 2px;
+ }
+ #aioWheelPopup > menuitem {
+   -moz-appearance: none !important;
+   background: #eee;
+   height: 1.8em;
+   padding: 0;
+   margin: 0;
+   padding: 0 5px;
+ }
+ #aioWheelPopup > menuitem[_moz-menuactive="true"] {
+   color: white !important;
+   background: #067cff !important;
+ }
+ #aioWheelPopup > menuitem.history[_moz-menuactive="true"] {
+   background: #444 !important;
+ }
+ 
+ .aioTrail {
+   height: 1px;
+   width: 1px;
+   border: none;
+   padding: 0;
+   background-color: transparent;
+   opacity: 1;
+   -moz-appearance: none;
+ }

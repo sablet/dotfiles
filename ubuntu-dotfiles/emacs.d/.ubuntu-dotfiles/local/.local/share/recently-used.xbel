@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/nikke/iMacros/Downloads/Download2.zip" added="2016-03-16T03:48:18Z" modified="2016-03-16T03:48:18Z" visited="2016-03-16T03:48:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-16T03:48:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/write/paper/parent.pdf" added="2016-03-16T08:16:36Z" modified="2016-04-01T14:35:33Z" visited="2016-03-16T08:16:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-16T08:23:47Z" count="4"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-25T13:18:21Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2016-04-01T14:35:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/write_paper/parent.pdf" added="2016-03-16T08:26:15Z" modified="2016-03-25T07:32:53Z" visited="2016-03-16T08:26:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-25T07:32:53Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/write/presentation/present.pdf" added="2016-03-16T08:48:31Z" modified="2016-03-16T12:06:01Z" visited="2016-03-16T08:48:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-16T12:06:01Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Downloads/lxfonts.zip" added="2016-03-16T11:59:34Z" modified="2016-03-16T11:59:35Z" visited="2016-03-16T11:59:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-16T11:59:35Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/paper_collection/adaglad.pdf" added="2016-03-17T01:30:51Z" modified="2016-03-23T06:26:39Z" visited="2016-03-17T01:30:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;evince %U&apos;" modified="2016-03-17T01:30:51Z" count="2"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2016-03-23T06:26:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/paper_collection/atari_reinforcement" added="2016-03-17T01:32:24Z" modified="2016-03-17T01:32:24Z" visited="2016-03-17T01:32:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-17T01:32:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/atari_reinforcement_k2opt.pdf" added="2016-03-17T03:05:05Z" modified="2016-03-20T13:21:13Z" visited="2016-03-17T03:05:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-20T13:21:13Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/nikke/Kindle/documents/%E3%83%95%E3%82%A3%E3%83%AB%E3%83%BB%E3%82%B4%E3%83%BC%E3%83%89%E3%83%B3%E3%81%AE%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%9D%E3%83%BC%E3%82%AB%E3%83%BC_B00D89DG4W.sdr/AssetDownloadMetadata.meta" added="2016-03-17T04:06:45Z" modified="2016-03-17T04:06:50Z" visited="2016-03-17T04:06:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;env WINEPREFIX=&quot;/home/nikke/.wine&quot; wine start /ProgIDOpen txtfile %f&apos;" modified="2016-03-17T04:06:50Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/nikke/Kindle/system/pdf/1c80201a17eb0a252ce8e76b54647cf8" added="2016-03-17T04:12:23Z" modified="2016-03-17T04:12:23Z" visited="2016-03-17T04:12:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;evince %U&apos;" modified="2016-03-17T04:12:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/FireShot%20Capture%202%20-%20THE%20%E5%96%AB%E8%8C%B6%E5%BA%97%20I%20THE49%20%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E6%89%8B%E8%BB%BD%E3%81%AB%E7%84%BC%E3%81%8D%E8%8A%8B%E3%83%A9%E3%82%A4%E3%83%95%20%7C%20%E3%82%B5%E3%82%AB%E3%83%A2%E3%83%88%E3%83%88%E3%82%B7%E3%82%AB%E3%82%BA%20-%20c_%20-%20http___www.comico.jp_detail.nhn" added="2016-03-17T04:41:48Z" modified="2016-03-17T04:41:48Z" visited="2016-03-17T04:41:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-17T04:41:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/FireShot%20Capture%203%20-%20THE%20%E5%96%AB%E8%8C%B6%E5%BA%97%20I%20THE49%20%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E6%89%8B%E8%BB%BD%E3%81%AB%E7%84%BC%E3%81%8D%E8%8A%8B%E3%83%A9%E3%82%A4%E3%83%95%20%7C%20%E3%82%B5%E3%82%AB%E3%83%A2%E3%83%88%E3%83%88%E3%82%B7%E3%82%AB%E3%82%BA%20-%20c_%20-%20http___www.comico.jp_detail.pdf" added="2016-03-17T04:45:58Z" modified="2016-03-17T07:23:54Z" visited="2016-03-17T04:45:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-17T04:49:04Z" count="2"/>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-17T07:23:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/zsh_completeion.pdf" added="2016-03-17T05:50:10Z" modified="2016-03-17T05:50:24Z" visited="2016-03-17T05:50:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-17T05:50:24Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/zsh_completeion_k2opt.pdf" added="2016-03-17T06:51:54Z" modified="2016-03-17T06:51:54Z" visited="2016-03-17T06:51:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-17T06:51:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/coffe.pdf" added="2016-03-17T07:28:11Z" modified="2016-03-20T13:37:02Z" visited="2016-03-17T07:28:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-20T13:37:02Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/coffee30.png" added="2016-03-17T07:32:52Z" modified="2016-03-17T07:32:52Z" visited="2016-03-17T07:32:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-17T07:32:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Downloads/pup_linux_amd64.zip" added="2016-03-17T08:10:54Z" modified="2016-03-17T08:10:54Z" visited="2016-03-17T08:10:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-17T08:10:54Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/memo/pup_git.pdf" added="2016-03-17T11:59:45Z" modified="2016-03-17T11:59:45Z" visited="2016-03-17T11:59:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-17T11:59:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Music/JAZZ_PIANO" added="2016-03-18T07:34:50Z" modified="2016-03-18T07:34:50Z" visited="2016-03-18T07:34:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="foobnix" exec="&apos;foobnix %u&apos;" modified="2016-03-18T07:34:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Music/randamu" added="2016-03-18T07:36:00Z" modified="2016-03-18T07:36:00Z" visited="2016-03-18T07:36:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="foobnix" exec="&apos;foobnix %u&apos;" modified="2016-03-18T07:36:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Downloads/LineInst.exe" added="2016-03-19T05:01:12Z" modified="2016-03-19T05:01:26Z" visited="2016-03-19T05:01:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ms-dos-executable"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-19T05:01:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Downloads/SetupPoker.exe" added="2016-03-19T09:31:26Z" modified="2016-03-19T09:34:11Z" visited="2016-03-19T09:31:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ms-dos-executable"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-19T09:33:35Z" count="2"/>
+          <bookmark:application name="nemo" exec="&apos;wine start /unix %f&apos;" modified="2016-03-19T09:34:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Downloads/tech.org" added="2016-03-20T12:53:51Z" modified="2016-03-20T12:53:51Z" visited="2016-03-20T12:53:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-20T12:53:51Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/%5BPLANT%20(%E9%B6%B4%E4%BA%95)%20%E3%81%95%E3%81%BF%E3%81%97%E3%81%8F%E3%81%AA%E3%82%93%E3%81%8B%E3%81%AA%E3%81%84!%20(%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC).pdf" added="2016-03-20T13:13:14Z" modified="2016-03-20T13:14:15Z" visited="2016-03-20T13:13:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-20T13:13:36Z" count="2"/>
+          <bookmark:application name="nemo" exec="&apos;mupdf %f&apos;" modified="2016-03-20T13:14:01Z" count="1"/>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-20T13:14:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/tmp/pasteru154.pdf" added="2016-03-20T13:38:22Z" modified="2016-03-20T13:40:19Z" visited="2016-03-20T13:38:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-20T13:39:58Z" count="2"/>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-20T13:40:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Music/digimon_sound_track" added="2016-03-20T14:08:36Z" modified="2016-03-20T14:08:36Z" visited="2016-03-20T14:08:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="foobnix" exec="&apos;foobnix %u&apos;" modified="2016-03-20T14:08:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/paper_collection/atari_reinforcement.pdf" added="2016-03-23T06:26:56Z" modified="2016-03-23T06:26:56Z" visited="2016-03-23T06:26:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2016-03-23T06:26:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Downloads/KindleForPC-installer-1.15.43061.exe" added="2016-03-24T12:19:53Z" modified="2016-03-24T12:20:44Z" visited="2016-03-24T12:19:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ms-dos-executable"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-24T12:20:44Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/nikke/Elements/key.dat" added="2016-03-24T14:42:35Z" modified="2016-03-24T14:42:35Z" visited="2016-03-24T14:42:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;env WINEPREFIX=&quot;/home/nikke/.wine&quot; wine start /ProgIDOpen txtfile %f&apos;" modified="2016-03-24T14:42:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/nikke/Elements/pictures/iphone_picture/100APPLE/IMG_0042.JPG" added="2016-03-24T14:43:29Z" modified="2016-03-24T14:43:29Z" visited="2016-03-24T14:43:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;nomacs %F&apos;" modified="2016-03-24T14:43:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/nikke/Elements/pictures/iphone_picture/100APPLE/IMG_0020.JPG" added="2016-03-24T14:43:42Z" modified="2016-03-24T14:43:42Z" visited="2016-03-24T14:43:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;nomacs %F&apos;" modified="2016-03-24T14:43:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/nikke/Elements/pictures/iphone_picture/100APPLE/IMG_0019.JPG" added="2016-03-24T14:43:53Z" modified="2016-03-24T14:43:53Z" visited="2016-03-24T14:43:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;nomacs %F&apos;" modified="2016-03-24T14:43:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Pictures/coffee_wall.jpeg" added="2016-03-26T11:42:15Z" modified="2016-03-26T11:42:15Z" visited="2016-03-26T11:42:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-26T11:42:15Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Pictures/nature" added="2016-03-26T11:43:09Z" modified="2016-03-26T11:43:09Z" visited="2016-03-26T11:43:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="cinnamon-settings.py" exec="&apos;cinnamon-settings.py %u&apos;" modified="2016-03-26T11:43:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Pictures/coffee_wall2.jpeg" added="2016-03-26T14:31:24Z" modified="2016-03-26T14:31:25Z" visited="2016-03-26T14:31:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-26T14:31:25Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Pictures/coffee_wall3.jpeg" added="2016-03-26T14:31:54Z" modified="2016-03-26T14:31:56Z" visited="2016-03-26T14:31:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-03-26T14:31:56Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/PyQt-gpl-5.5.1.zip" added="2016-03-27T09:15:44Z" modified="2016-03-27T09:15:44Z" visited="2016-03-27T09:15:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-03-27T09:15:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/index.html%3Fplugin=attach&amp;refer=SIG-FIN-016-01&amp;openfile=SIG-FIN-016-01.pdf" added="2016-03-28T01:37:03Z" modified="2016-03-28T03:09:02Z" visited="2016-03-28T01:37:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-03-28T03:09:02Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/WEJPSetup101b.zip" added="2016-04-01T14:55:49Z" modified="2016-04-01T14:55:49Z" visited="2016-04-01T14:55:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-01T14:55:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/AcroRdrDC1501020060_ja_JP.exe" added="2016-04-02T02:21:45Z" modified="2016-04-02T02:21:45Z" visited="2016-04-02T02:21:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-02T02:21:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/paper_collection/reservior_computing_overview.pdf" added="2016-04-05T13:04:38Z" modified="2016-04-05T13:04:38Z" visited="2016-04-05T13:04:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2016-04-05T13:04:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/pdf_contents/paper/reservior_computing_review.pdf" added="2016-04-05T20:56:20Z" modified="2016-04-06T08:15:22Z" visited="2016-04-05T20:56:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-05T20:56:20Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2016-04-06T08:15:22Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/paper_collection/reservior_computing_review.pdf" added="2016-04-05T21:16:14Z" modified="2016-04-05T21:16:14Z" visited="2016-04-05T21:16:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-04-05T21:16:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/temp/IMG_20160406_162001.jpg" added="2016-04-06T07:31:32Z" modified="2016-04-06T07:31:32Z" visited="2016-04-06T07:31:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-06T07:31:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/temp/IMG_20160406_162013.jpg" added="2016-04-06T07:31:37Z" modified="2016-04-06T07:31:37Z" visited="2016-04-06T07:31:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-06T07:31:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/temp/IMG_20160406_170345.jpg" added="2016-04-06T08:12:40Z" modified="2016-04-06T08:12:40Z" visited="2016-04-06T08:12:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-06T08:12:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/temp/IMG_20160406_171044.jpg" added="2016-04-06T08:12:44Z" modified="2016-04-06T08:12:44Z" visited="2016-04-06T08:12:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-06T08:12:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/pdf_contents/etc/RNNsTutorial.pdf" added="2016-04-07T07:18:29Z" modified="2016-04-07T07:18:29Z" visited="2016-04-07T07:18:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2016-04-07T07:18:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nikke/Dropbox/pdf_contents/etc/RNNsTutorial_k2opt.pdf" added="2016-04-07T07:29:08Z" modified="2016-04-07T07:29:08Z" visited="2016-04-07T07:29:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2016-04-07T07:29:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+: ${2:?}
+str=${3:- }
+if [ $2 -gt 0 ]
+then
+		str="$1"$str
+		rec_echo "$1" $(expr $2 - 1) $str
+else
+		echo $str
+fi

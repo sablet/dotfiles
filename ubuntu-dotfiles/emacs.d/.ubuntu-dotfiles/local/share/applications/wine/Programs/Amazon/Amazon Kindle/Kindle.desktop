@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Kindle
+Exec=env WINEPREFIX="/home/nikke/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/nikke/.wine/dosdevices/c:/users/nikke/Start\\ Menu/Programs/Amazon/Amazon\\ Kindle/Kindle.lnk
+Type=Application
+StartupNotify=true
+Path=/home/nikke/.wine/dosdevices/c:/Program Files/Amazon/Kindle/content
+Icon=CCFB_Kindle.0

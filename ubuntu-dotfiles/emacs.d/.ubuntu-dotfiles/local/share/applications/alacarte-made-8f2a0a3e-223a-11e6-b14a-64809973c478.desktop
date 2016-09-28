@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=windows_virtual
+Exec=VirtualBox --startvm win10
+Type=Application

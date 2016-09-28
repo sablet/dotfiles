@@ -1,0 +1,69 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+treechildren::-moz-tree-row(aioHovered) {
+  background: #F0F0F0 url("feedback.png") no-repeat bottom left;
+}
+treechildren::-moz-tree-row(aioHoverCol) {
+  background: #F0F0F0 url("feedback.png") no-repeat top left;
+}
+treechildren::-moz-tree-row(separator) {
+  background: #2d4363;
+}
+treecol.enableColHeader {
+  list-style-image: url("enabled.png");
+}
+treechildren::-moz-tree-image(enabledColId, aioGestEnabled) {
+  list-style-image: url("enabled.png");
+}
+treechildren::-moz-tree-image(enabledColId, aioGestDisabled) {
+  list-style-image: url("disabled.png");
+}
+treecol.infoColHeader {
+  list-style-image: url("info.png");
+  width: 20px;
+}
+treechildren::-moz-tree-image(hasInfo) {
+  list-style-image: url("info.png");
+  opacity: 0.5;
+}
+treechildren::-moz-tree-image(hover, hasInfo, documented) {
+  opacity: 1;
+}
+treechildren::-moz-tree-image(hasInfo, documented) {
+  cursor: pointer;
+}
+treechildren::-moz-tree-cell-text(separator) {
+  font-weight: bold;
+  color: white;
+}
+html|div#infoPopupContent {
+  padding: 1.5ex;
+  white-space: normal;
+}
+html|div#infoPopupContent html|h1 {
+  padding: 0;
+  margin: 0 0 1ex 0;
+  font-size: 120%;
+  text-decoration: underline;
+}
+html|div#infoPopupContent html|br {
+  line-height: 5px;
+}
+
+.aio-indent {
+margin-left: 27px;
+}
+.aio-dblh {
+height: 2em;
+}
+.aio-smallButton {
+height: 1.5em;
+min-width: 2em;
+min-height: 1em;
+margin-right: 0px;
+}
+.aio-border {
+border-top: 2px solid;
+margin-left: 5px;
+}
