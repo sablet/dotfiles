@@ -18,6 +18,7 @@ alias -g T='2>&1 | tee'
 alias k2pdf_1column='k2pdfopt -n -w 1.0s -h 1.0s -om 1.5,0.25,1.5,0.25 -c -wrap- -fc- -col 2 -vls 1.4'
 alias reset_sh='source ~/.zshrc'
 alias sh_reset=reset_sh
+alias date_summary='date "+%y%m%d"'
 
 alias mytensor='source /home/nikke/virtualenvs/tensorflow-gpu/bin/activate'
 
@@ -47,15 +48,9 @@ fi
 
 # ディストリビューション別の設定
 
-case $(uname -a) in
-		*Arch*)
-				alias pac_install='sudo pacman -S'
-				;;
-		*)
-				alias open='gnome-open'
-				alias apt_install='sudo apt-get install -y'
-				;;
-esac
+#case $(uname -a) in
+#alias pac_install='sudo pacman -S'
+alias open='gnome-open'
 
 mk_mv (){mkdir $1; cd $1; }
 

@@ -22,14 +22,17 @@ cat ~/.address|grep university && {
     
 export browser='chromium-browser'
 
-export PATH=$PATH:$HOME/git_dir/dotfiles/script/shell_script
-export PATH=$PATH:$HOME/git_dir/dotfiles/script/python_script
+export DOT_DIR=$HOME/git_dir/dotfiles
+export PATH=$PATH:$DOT_DIR/script/shell_script
+export PATH=$PATH:$DOT_DIR/script/python_script
+export GIT_MEMO=$DOT_DIR/etc/gitmemo
+export APT_MEMO=$DOT_DIR/etc/aptmemo
 
-cat .address|grep chromebook || {
+grep chromebook .address || {
     export PATH=$PATH:$HOME/anaconda3/bin
 }
 
-cat .address|grep chromebook && {
+grep chromebook .address && {
     export PATH=$PATH:$HOME/miniconda3/bin
 }
-# export PATH=/home/nikke/anaconda2/bin:$PATH
+
