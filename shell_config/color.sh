@@ -10,4 +10,5 @@ man() {
                 man "$@"
 }
 
-
+# grep color 
+alias grep="grep --with-filename --line-number --color=always"
