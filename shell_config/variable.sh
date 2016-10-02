@@ -28,11 +28,11 @@ export PATH=$PATH:$DOT_DIR/script/python_script
 export GIT_MEMO=$DOT_DIR/etc/gitmemo
 export APT_MEMO=$DOT_DIR/etc/aptmemo
 
-grep chromebook .address || {
+grep chromebook $HOME/.address > /dev/null || {
     export PATH=$PATH:$HOME/anaconda3/bin
 }
 
-grep chromebook .address && {
+grep chromebook $HOME/.address > /dev/null && {
     export PATH=$PATH:$HOME/miniconda3/bin
 }
 

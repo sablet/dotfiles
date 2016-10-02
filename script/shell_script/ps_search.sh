@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 : ${1:?}
 if test -z $funcstack[2]
 then

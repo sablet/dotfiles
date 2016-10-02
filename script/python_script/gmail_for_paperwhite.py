@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/home/nikke/anaconda2/bin/python
 # -*- coding: utf-8 -*-
 
 """
@@ -18,8 +18,8 @@ from email.MIMEText import MIMEText
 #Gmailアカウント
 #ADDRESS = "Gmailのアドレス"
 #PASSWARD = "Gmailのパスワード"
-ADDRESS = "e.typ719@gmail.com"
-PASSWARD = "kghz8724"
+ADDRESS = "yamada.taro.44z@gmail.com"
+PASSWARD = "87248724"
 
 #SMTPサーバの設定(Gmail用)
 SMTP = "smtp.gmail.com"
@@ -83,7 +83,8 @@ if __name__ == '__main__':
     #件名と本文
     #    subject = "件名"
     #    body = "本文"
-    subject = 'convert'
+    # subject = 'convert'
+    subject = ''
     body= ''
 
     #添付ファイル設定(text.txtファイルを添付)
