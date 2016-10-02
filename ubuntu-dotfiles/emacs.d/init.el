@@ -10,7 +10,8 @@
             (normal-top-level-add-subdirs-to-load-path))))))
 
 ;; 引数のディレクトリとそのサブディレクトリをload-pathに追加
-(add-to-load-path "elisp" "conf" "elpa" "el-get" ".python-environments" "site-lisp")
+(add-to-load-path "elisp" "conf" "elpa" "el-get" "site-lisp")
+;; (add-to-load-path "elisp" "conf" "elpa" "el-get" ".python-environments" "site-lisp")
 
 ;init-loader
 (require 'init-loader)
