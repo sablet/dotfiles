@@ -21,6 +21,9 @@ alias sh_reset=reset_sh
 
 alias mytensor='source /home/nikke/virtualenvs/tensorflow-gpu/bin/activate'
 
+function cat_jq(){cat $1|jq .;}
+
+
 #to do require xsel
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
