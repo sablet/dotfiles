@@ -4,6 +4,7 @@
 source $HOME/git_dir/dotfiles/shell_config/alias.sh
 source $HOME/git_dir/dotfiles/shell_config/variable.sh
 source $HOME/git_dir/dotfiles/shell_config/color.sh
+source $HOME/git_dir/dotfiles/shell_config/functions.sh
 
 # color enable
 autoload -Uz colors
