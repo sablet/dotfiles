@@ -48,7 +48,7 @@ case $(uname -a) in
 		*Arch*)
 				alias pac_install='sudo pacman -S'
 				;;
-		*Ubuntu*)
+		*)
 				alias open='gnome-open'
 				alias apt_install='sudo apt-get install -y'
 				;;
