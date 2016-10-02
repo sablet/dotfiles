@@ -1,4 +1,4 @@
-export LANG=en_US.UTF=8
+export LANG=en_US.UTF_8
 export LESS='-R'
 export LESSOPEN='| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
 
@@ -24,5 +24,12 @@ export browser='chromium-browser'
 
 export PATH=$PATH:$HOME/git_dir/dotfiles/script/shell_script
 export PATH=$PATH:$HOME/git_dir/dotfiles/script/python_script
-export PATH=$PATH:$HOME/anaconda3/bin
+
+cat .address|grep chromebook || {
+    export PATH=$PATH:$HOME/anaconda3/bin
+}
+
+cat .address|grep chromebook && {
+    export PATH=$PATH:$HOME/miniconda3/bin
+}
 # export PATH=/home/nikke/anaconda2/bin:$PATH
