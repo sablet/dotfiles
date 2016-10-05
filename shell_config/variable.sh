@@ -12,7 +12,7 @@ lspci|grep GTX > /dev/null && {
     export CUDA_HOME=/usr/local/cuda
 }
 
-cat ~/.address|grep university && {
+cat ~/.address|grep university > /dev/null && {
 		alias sudo='sudo -E'
 		export http_proxy="http://proxy.kuins.net:8080"
 		export https_proxy="https://proxy.kuins.net:8080"
@@ -36,3 +36,4 @@ grep chromebook $HOME/.address > /dev/null && {
     export PATH=$PATH:$HOME/miniconda3/bin
 }
 
+export PATH="$PATH:$HOME/bin"
