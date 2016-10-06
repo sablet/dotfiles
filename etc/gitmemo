@@ -3,3 +3,6 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git
 
 # 161005
 git clone https://github.com/tensorflow/magenta.git
+
+# 161005
+git clone https://github.com/StateFarmIns/bazel
