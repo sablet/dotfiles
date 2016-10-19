@@ -36,3 +36,5 @@ grep chromebook $HOME/.address > /dev/null && {
     export PATH=$PATH:$HOME/miniconda3/bin
 }
 
+# ruby class config
+export RUBYLIB=$HOME/ruby-class/lib
