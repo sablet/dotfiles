@@ -7,10 +7,10 @@ export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
 
-which lspci && lspci |grep GTX > /dev/null && {
-    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
-    export CUDA_HOME=/usr/local/cuda
-}
+#[[ lspci ]] && lspci  | [ grep GTX ]] && {
+#    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
+#    export CUDA_HOME=/usr/local/cuda
+#}
 
 cat ~/.address|grep university && {
 		alias sudo='sudo -E'
