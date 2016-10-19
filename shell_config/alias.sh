@@ -54,4 +54,4 @@ alias open='gnome-open'
 
 mk_mv (){mkdir $1; cd $1; }
 
-function new(){cd $1;ls -lt|head;cd -;}
+function new(){cd ${1:-.};ls -lt|head;cd -;}
