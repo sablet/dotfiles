@@ -7,12 +7,12 @@ export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
 
-which lspci && lspci |grep GTX > /dev/null && {
-    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
-    export CUDA_HOME=/usr/local/cuda
-}
+#[[ lspci ]] && lspci  | [ grep GTX ]] && {
+#    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
+#    export CUDA_HOME=/usr/local/cuda
+#}
 
-cat ~/.address|grep university > /dev/null && {
+cat ~/.address|grep university && {
 		alias sudo='sudo -E'
 		export http_proxy="http://proxy.kuins.net:8080"
 		export https_proxy="https://proxy.kuins.net:8080"
@@ -36,4 +36,5 @@ grep chromebook $HOME/.address > /dev/null && {
     export PATH=$PATH:$HOME/miniconda3/bin
 }
 
-export PATH="$PATH:$HOME/bin"
+# ruby class config
+export RUBYLIB=$HOME/ruby-class/lib
