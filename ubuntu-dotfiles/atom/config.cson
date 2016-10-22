@@ -1,0 +1,43 @@
+"*":
+  Hydrogen:
+    gateways: '''
+      [{
+          "name": "Remote notebook",
+          "options": {
+                  "baseUrl": "http://localhost:8888"
+          }
+      }]
+    '''
+    kernelspec: '''
+      {
+        "kernelspecs": {
+          "python3": {
+            "resource_dir": "/home/nikke/anaconda3/lib/python3.5/site-packages/ipykernel/resources",
+            "spec": {
+              "argv": [
+                "/home/nikke/anaconda3/bin/python",
+                "-m",
+                "ipykernel",
+                "-f",
+                "{connection_file}"
+              ],
+              "language": "python",
+              "env": {},
+              "display_name": "Python 3"
+            }
+          }
+        }
+      }
+      
+    '''
+  core: {}
+  editor:
+    fontFamily: "Ricty"
+    fontSize: 18
+  "exception-reporting":
+    userId: "be994fac-a8ca-76b8-72d2-a069ad07656d"
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+  welcome:
+    showOnStartup: false

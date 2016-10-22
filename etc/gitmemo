@@ -6,3 +6,15 @@ git clone https://github.com/tensorflow/magenta.git
 
 # 161005
 git clone https://github.com/StateFarmIns/bazel
+
+# 161020
+git clone https://github.com/tensorflow/magenta.git
+
+# 161020
+git clone https://github.com/ematvey/pybacktest.git
+
+# 161020
+git clone https://github.com/mhallsmoore/qstrader.git
+
+# 161020
+git clone https://github.com/sherjilozair/dqn.git
