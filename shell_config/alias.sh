@@ -55,3 +55,8 @@ alias open='gnome-open'
 mk_mv (){mkdir $1; cd $1; }
 
 function new(){cd ${1:-.};ls -lt|head;cd -;}
+
+function github_open(){
+	chromium-browser $(egrep -o 'https.*.git' "$1/.git/config") &
+}
+
