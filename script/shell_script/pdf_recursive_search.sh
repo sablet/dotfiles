@@ -22,4 +22,5 @@ ls $dname > /dev/null || {
 	done
 	echo search done
 }
+
 ag "$2" $dname/*
