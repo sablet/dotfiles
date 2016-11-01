@@ -1,5 +1,11 @@
 #!/bin/bash
 
+which pdftotext || {
+	echo "want to install xpdf? (y or n)"
+	read ans
+	[[ $ans -ne y ]] && sudo apt-get install xpdf
+}
+
 [[ $# = 2 ]] || {
 	echo please two argumets
 	exit 1
@@ -16,4 +22,5 @@ ls $dname > /dev/null || {
 	done
 	echo search done
 }
+
 ag "$2" $dname/*
