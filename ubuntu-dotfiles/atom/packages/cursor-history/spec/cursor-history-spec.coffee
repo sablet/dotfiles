@@ -159,7 +159,7 @@ describe "cursor-history", ->
           dispatchCommand editorElement2, 'test:move-down-5'
           entries = getEntries()
           expect(entries).toHaveLength 4
-          expect(main.history.isAtHead()).toBe true
+          expect(main.history.isIndexAtHead()).toBe true
           [e0, e1, e2, e3] = entries
           expect(getEditor().getURI()).toBe pathSample2
           expect(getEditor().getCursorBufferPosition()).toEqual [10, 0]
@@ -167,7 +167,8 @@ describe "cursor-history", ->
       runCommand = (command, fn) ->
         runs ->
           spyOn(main, "land").andCallThrough()
-          atom.commands.dispatch workspaceElement, command
+          target = atom.workspace.getActiveTextEditor().element
+          atom.commands.dispatch target, command
 
         waitsFor -> main.land.callCount is 1
         runs -> fn()
@@ -284,7 +285,7 @@ describe "cursor-history", ->
             dispatchCommand editorElement2, 'test:move-up-5'
             entries = getEntries()
             expect(entries).toHaveLength 2
-            expect(main.history.isAtHead()).toBe true
+            expect(main.history.isIndexAtHead()).toBe true
             expect(entries[1].URI).toBe(pathSample2)
             expect(entries[1].point).toEqual([10, 0])
 
@@ -313,10 +314,24 @@ describe "cursor-history", ->
             expect(getEntries('last')).toBeEqualEntry point: [1, 2], URI: pathSample1
 
       describe "ignoreCommands is set and match command name", ->
-        it "won't save cursor position to history when editor lost focus", ->
-          settings.set('ignoreCommands', ["test:open-sample2"])
-          spyOn(main, "newLocation").andCallThrough()
-          runs -> atom.commands.dispatch editorElement, 'test:open-sample2'
-          waitsFor -> editorElement2?.hasFocus() is true
-          runs ->
-            expect(main.newLocation.callCount).toBe 0
+        locationStackLength = null
+        dispatchOpenSample2Command = ->
+          promise = new Promise (resolve) ->
+            atom.commands.onWillDispatch ({type}) ->
+              type is 'test:open-sample2'
+              locationStackLength = main.locationStackForTestSpec.length
+              resolve()
+          atom.commands.dispatch editorElement, 'test:open-sample2'
+          promise
+
+        beforeEach ->
+          locationStackLength = null
+
+        it "track location change when editor lost focus", ->
+          waitsForPromise -> dispatchOpenSample2Command()
+          runs -> expect(locationStackLength).toBe 1
+
+        it "Doesn't track location change when editor lost focus", ->
+          settings.set('ignoreCommands', ['test:open-sample2'])
+          waitsForPromise -> dispatchOpenSample2Command()
+          runs -> expect(locationStackLength).toBe 0

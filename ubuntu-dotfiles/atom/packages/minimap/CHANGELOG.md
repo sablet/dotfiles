@@ -1,3 +1,18 @@
+<a name="v4.25.5"></a>
+# v4.25.5 (2016-10-20)
+
+## :bug: Bug Fixes
+
+- Fix invalid overlay offset when minimap is not adjusted ([73b9917c](https://github.com/atom-minimap/minimap/commit/73b9917c11813c24209d3c14ec28cbcd8b8bb2e9))
+- Guard against destroyed editor in adapters and decorations manager ([252d4572](https://github.com/atom-minimap/minimap/commit/252d4572a150a4fb14260c6d89784f5da8459823), [#489](https://github.com/atom-minimap/minimap/issues/489))
+
+<a name="v4.25.4"></a>
+# v4.25.4 (2016-10-20)
+
+## :bug: Bug Fixes
+
+- Fix size change handler making scrolling in the minimap impossible ([f98b54df](https://github.com/atom-minimap/minimap/commit/f98b54dfb7d0dab2315bb4825edd8eca04cb2615))
+
 <a name="v4.25.3"></a>
 # v4.25.3 (2016-10-20)
 

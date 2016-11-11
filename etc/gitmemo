@@ -33,3 +33,6 @@ git clone https://github.com/junhyukoh/deep-reinforcement-learning-papers.git
 
 # 161025
 git clone https://github.com/impress/impress.js.git
+
+# 161109
+git clone https://github.com/fchollet/keras.git

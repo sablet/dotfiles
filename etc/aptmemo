@@ -1,10 +1,57 @@
-# 161002
-sudo apt-get install -y firefox
-
-# 161002
-sudo apt-get install -y chromium-browser
-
-# 161002
-sudo apt-get install -y 
-# 161002
-sudo apt-get install -y 
+opam 
+ocaml 
+tuareg-mode
+shared-mime-info
+python-pip
+source-highlight
+libzmq3-dev
+git
+xpdf
+pandoc
+cmake 
+libjpeg-dev 
+xvfb 
+libav-tools 
+xorg-dev 
+python-opengl 
+libboost-all-dev 
+silversearcher-ag
+grub-customizer
+mime-support
+cmake
+curl
+libreadline-dev
+git-core
+ncurses-dev
+imagemagick
+libgd-dev
+wkhtmltopdf
+apache2
+node
+h5utils
+libgif-dev
+libtinfo-dev 
+libterm-clui-perl
+autoconf 
+automake
+npm
+libreoffice-help-ja
+ttf-kochi-gothic 
+ttf-kochi-mincho
+audacious
+foobnix
+build-essential
+colordiff
+meld
+r-base
+vlc
+zsh 
+emacs 
+kupfer
+unzip
+gfortran
+virtualenvwrapper
+terminator
+jq
+hdfview
+nautilus-dropbox
