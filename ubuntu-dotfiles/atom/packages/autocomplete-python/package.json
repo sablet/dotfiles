@@ -2,41 +2,45 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-1161011-21057-25gt7n/package.tgz",
+        "raw": "/tmp/d-1161029-9439-1vusae8/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-1161011-21057-25gt7n/package.tgz",
-        "spec": "/tmp/d-1161011-21057-25gt7n/package.tgz",
+        "rawSpec": "/tmp/d-1161029-9439-1vusae8/package.tgz",
+        "spec": "/tmp/d-1161029-9439-1vusae8/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-1161011-21057-8uc1ht"
+      "/tmp/apm-install-dir-1161029-9439-19mca4w"
     ]
   ],
-  "_from": "../d-1161011-21057-25gt7n/package.tgz",
-  "_id": "autocomplete-python@1.8.11",
+  "_from": "../d-1161029-9439-1vusae8/package.tgz",
+  "_id": "autocomplete-python@1.8.12",
   "_inCache": true,
   "_installable": true,
   "_location": "/autocomplete-python",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-1161011-21057-25gt7n/package.tgz",
+    "raw": "/tmp/d-1161029-9439-1vusae8/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-1161011-21057-25gt7n/package.tgz",
-    "spec": "/tmp/d-1161011-21057-25gt7n/package.tgz",
+    "rawSpec": "/tmp/d-1161029-9439-1vusae8/package.tgz",
+    "spec": "/tmp/d-1161029-9439-1vusae8/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-1161011-21057-25gt7n/package.tgz",
-  "_shasum": "d037fa28e5e5080778bb99dd2050e9ec4a2f4d87",
+  "_resolved": "file:../d-1161029-9439-1vusae8/package.tgz",
+  "_shasum": "0ced6c87a5191fcd18b920f639ce1bc65d7655f0",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-1161011-21057-25gt7n/package.tgz",
-  "_where": "/tmp/apm-install-dir-1161011-21057-8uc1ht",
-  "activationCommands": {},
+  "_spec": "/tmp/d-1161029-9439-1vusae8/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161029-9439-19mca4w",
+  "activationHooks": [
+    "language-python:grammar-used",
+    "MagicPython:grammar-used",
+    "atom-django:grammar-used"
+  ],
   "bugs": {
     "url": "https://github.com/sadovnychyi/autocomplete-python/issues"
   },
@@ -95,5 +99,5 @@
     "type": "git",
     "url": "git+https://github.com/sadovnychyi/autocomplete-python.git"
   },
-  "version": "1.8.11"
+  "version": "1.8.12"
 }

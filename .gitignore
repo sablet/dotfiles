@@ -1,4 +1,5 @@
 ubuntu-dotfiles/atom/compile-cache/*
+ubuntu-dotfiles/atom/packages/*
 ubuntu-dotfiles/atom/blob-store/*
 *.pyc
 *.elc

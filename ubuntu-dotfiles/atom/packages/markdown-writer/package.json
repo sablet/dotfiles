@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-1161011-20224-e5n5we/package.tgz",
+        "raw": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-1161011-20224-e5n5we/package.tgz",
-        "spec": "/tmp/d-1161011-20224-e5n5we/package.tgz",
+        "rawSpec": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
+        "spec": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-1161011-20224-qkev96"
+      "/tmp/apm-install-dir-1161029-9505-11oymyq"
     ]
   ],
-  "_from": "../d-1161011-20224-e5n5we/package.tgz",
-  "_id": "markdown-writer@2.6.1",
+  "_from": "../d-1161029-9505-1t2rhyo/package.tgz",
+  "_id": "markdown-writer@2.6.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/markdown-writer",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-1161011-20224-e5n5we/package.tgz",
+    "raw": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-1161011-20224-e5n5we/package.tgz",
-    "spec": "/tmp/d-1161011-20224-e5n5we/package.tgz",
+    "rawSpec": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
+    "spec": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-1161011-20224-e5n5we/package.tgz",
-  "_shasum": "0efa359af96a91f0eb364bb11da2a2ed6a34bac8",
+  "_resolved": "file:../d-1161029-9505-1t2rhyo/package.tgz",
+  "_shasum": "038756464f8da0c310b15f10e549eb337ae7a17d",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-1161011-20224-e5n5we/package.tgz",
-  "_where": "/tmp/apm-install-dir-1161011-20224-qkev96",
+  "_spec": "/tmp/d-1161029-9505-1t2rhyo/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161029-9505-11oymyq",
   "activationCommands": {
     "atom-workspace": [
       "markdown-writer:new-post",
@@ -123,5 +123,5 @@
     "type": "git",
     "url": "git+https://github.com/zhuochun/md-writer.git"
   },
-  "version": "2.6.1"
+  "version": "2.6.2"
 }

@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-116103-8145-dv8rfm/package.tgz",
+        "raw": "/tmp/d-1161029-9450-srlbw9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-116103-8145-dv8rfm/package.tgz",
-        "spec": "/tmp/d-116103-8145-dv8rfm/package.tgz",
+        "rawSpec": "/tmp/d-1161029-9450-srlbw9/package.tgz",
+        "spec": "/tmp/d-1161029-9450-srlbw9/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-116103-8145-p0hjdv"
+      "/tmp/apm-install-dir-1161029-9450-1ur8s4t"
     ]
   ],
-  "_from": "../d-116103-8145-dv8rfm/package.tgz",
-  "_id": "file-icons@1.7.24",
+  "_from": "../d-1161029-9450-srlbw9/package.tgz",
+  "_id": "file-icons@1.7.25",
   "_inCache": true,
   "_installable": true,
   "_location": "/file-icons",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-116103-8145-dv8rfm/package.tgz",
+    "raw": "/tmp/d-1161029-9450-srlbw9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-116103-8145-dv8rfm/package.tgz",
-    "spec": "/tmp/d-116103-8145-dv8rfm/package.tgz",
+    "rawSpec": "/tmp/d-1161029-9450-srlbw9/package.tgz",
+    "spec": "/tmp/d-1161029-9450-srlbw9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116103-8145-dv8rfm/package.tgz",
-  "_shasum": "9139cd60acc5891fa1ba699da7114ba1a621c061",
+  "_resolved": "file:../d-1161029-9450-srlbw9/package.tgz",
+  "_shasum": "3e363a0422a935a6a27974e7f60c86421f3d3958",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-116103-8145-dv8rfm/package.tgz",
-  "_where": "/tmp/apm-install-dir-116103-8145-p0hjdv",
+  "_spec": "/tmp/d-1161029-9450-srlbw9/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161029-9450-1ur8s4t",
   "bugs": {
     "url": "https://github.com/DanBrooker/file-icons/issues"
   },
@@ -57,5 +57,5 @@
     "type": "git",
     "url": "git+https://github.com/DanBrooker/file-icons.git"
   },
-  "version": "1.7.24"
+  "version": "1.7.25"
 }

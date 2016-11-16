@@ -2,40 +2,46 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-116922-6445-1wn31kw/package.tgz",
+        "raw": "/tmp/d-1161029-9494-16b7rik/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-116922-6445-1wn31kw/package.tgz",
-        "spec": "/tmp/d-116922-6445-1wn31kw/package.tgz",
+        "rawSpec": "/tmp/d-1161029-9494-16b7rik/package.tgz",
+        "spec": "/tmp/d-1161029-9494-16b7rik/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-116922-6445-120choe"
+      "/tmp/apm-install-dir-1161029-9494-1yelscp"
     ]
   ],
-  "_from": "../d-116922-6445-1wn31kw/package.tgz",
-  "_id": "linter-flake8@2.0.2",
+  "_from": "../d-1161029-9494-16b7rik/package.tgz",
+  "_id": "linter-flake8@2.1.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/linter-flake8",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-116922-6445-1wn31kw/package.tgz",
+    "raw": "/tmp/d-1161029-9494-16b7rik/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-116922-6445-1wn31kw/package.tgz",
-    "spec": "/tmp/d-116922-6445-1wn31kw/package.tgz",
+    "rawSpec": "/tmp/d-1161029-9494-16b7rik/package.tgz",
+    "spec": "/tmp/d-1161029-9494-16b7rik/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116922-6445-1wn31kw/package.tgz",
-  "_shasum": "d2d69ef302adb40881162a18a435e1d5b8abc571",
+  "_resolved": "file:../d-1161029-9494-16b7rik/package.tgz",
+  "_shasum": "52931827bfeba03a8c2c35ba507100bb5a37fec6",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-116922-6445-1wn31kw/package.tgz",
-  "_where": "/tmp/apm-install-dir-116922-6445-120choe",
+  "_spec": "/tmp/d-1161029-9494-16b7rik/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161029-9494-1yelscp",
+  "activationHooks": [
+    "language-python:grammar-used",
+    "MagicPython:grammar-used",
+    "django-atom:grammar-used",
+    "atom-django:grammar-used"
+  ],
   "bugs": {
     "url": "https://github.com/AtomLinter/linter-flake8/issues"
   },
@@ -104,9 +110,9 @@
   },
   "description": "Atom linter plugin for Python, using flake8",
   "devDependencies": {
-    "eslint": "^3.8.0",
-    "eslint-config-airbnb-base": "^9.0.0",
-    "eslint-plugin-import": "^2.0.1"
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^10.0.0",
+    "eslint-plugin-import": "^2.1.0"
   },
   "engines": {
     "atom": ">=1.9.0 <2.0.0"
@@ -156,5 +162,5 @@
     "lint": "eslint .",
     "test": "apm test"
   },
-  "version": "2.0.2"
+  "version": "2.1.2"
 }
