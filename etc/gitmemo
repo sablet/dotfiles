@@ -36,3 +36,6 @@ git clone https://github.com/impress/impress.js.git
 
 # 161109
 git clone https://github.com/fchollet/keras.git
+
+# 161114
+git clone https://gist.github.com/86ae316a231bceb96a3e2ab3ac8e646a.git
