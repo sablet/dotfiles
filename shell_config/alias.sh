@@ -22,6 +22,12 @@ alias date_summary='date "+%y%m%d"'
 
 alias mytensor='source /home/nikke/virtualenvs/tensorflow-gpu/bin/activate'
 
+
+# go get github.com/yusukebe/revealgo/cmd/revealgo
+slidestart(){
+	$GOPATH/bin/revealgo $1 --transition none
+}
+
 function cat_jq(){cat $1|jq .;}
 
 

@@ -38,3 +38,8 @@ grep chromebook $HOME/.address > /dev/null && {
 
 # ruby class config
 export RUBYLIB=$HOME/ruby-class/lib
+
+export GOPATH=$HOME/gopath
+mkdir $GOPATH
+
+export dotfiles=$HOME/git_dir/dotfiles
