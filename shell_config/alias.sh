@@ -19,8 +19,9 @@ alias k2pdf_1column='k2pdfopt -n -w 1.0s -h 1.0s -om 1.5,0.25,1.5,0.25 -c -wrap-
 alias reset_sh='source ~/.zshrc'
 alias sh_reset=reset_sh
 alias date_summary='date "+%y%m%d"'
-
+alias vir_python="source $HOME/anaconda3/bin/activate; ipython"
 alias mytensor='source /home/nikke/virtualenvs/tensorflow-gpu/bin/activate'
+alias pdflatex='ptex2pdf -u -l -ot "-synctex=1 -halt-on-error -interaction=nonstopmode -file-line-error" %O %S'
 
 
 # go get github.com/yusukebe/revealgo/cmd/revealgo
@@ -52,12 +53,6 @@ elif which putclip >/dev/null 2>&1 ; then
     alias -g C='| putclip'
 fi
 
-# ディストリビューション別の設定
-
-#case $(uname -a) in
-#alias pac_install='sudo pacman -S'
-alias open='gnome-open'
-
 mk_mv (){mkdir $1; cd $1; }
 
 function new(){cd ${1:-.};ls -lt|head;cd -;}
@@ -65,4 +60,3 @@ function new(){cd ${1:-.};ls -lt|head;cd -;}
 function github_open(){
 	chromium-browser $(egrep -o 'https.*.git' "$1/.git/config") &
 }
-

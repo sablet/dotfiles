@@ -12,7 +12,9 @@
       {
         "kernelspecs": {
           "python3": {
+            "resource_dir": "/home/nikke/anaconda3/lib/python3.5/site-packages/ipykernel/resources",
             "spec": {
+              "display_name": "Python 3",
               "language": "python",
               "argv": [
                 "/home/nikke/anaconda3/bin/python",
@@ -21,10 +23,8 @@
                 "-f",
                 "{connection_file}"
               ],
-              "display_name": "Python 3",
               "env": {}
-            },
-            "resource_dir": "/home/nikke/anaconda3/lib/python3.5/site-packages/ipykernel/resources"
+            }
           }
         }
       }
@@ -32,6 +32,7 @@
     '''
   core:
     autoHideMenuBar: true
+    telemetryConsent: "limited"
   editor:
     fontFamily: "RictyDiminishedDiscord-Regular"
     fontSize: 18
