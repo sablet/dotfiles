@@ -15,8 +15,8 @@ export QT_IM_MODULE=fcitx
 cat ~/.address|grep university && {
 		alias sudo='sudo -E'
 		export http_proxy="http://proxy.kuins.net:8080"
-		export https_proxy="https://proxy.kuins.net:8080"
-		export ftp_proxy="http://proxy.kuins.net:8080"
+		export https_proxy=$http_proxy
+		export ftp_proxy=$http_proxy
 		export ssh_proxy=$http_proxy
 }
     
