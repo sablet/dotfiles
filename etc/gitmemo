@@ -38,6 +38,7 @@ git clone https://github.com/impress/impress.js.git
 git clone https://github.com/fchollet/keras.git
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 161130
 git clone https://github.com/hakimel/reveal.js.git
 
@@ -49,6 +50,10 @@ git clone https://github.com/okamototk/test.git
 
 # 161223
 git clone https://github.com/coreylynch/async-rl.git
+=======
+# 161114
+git clone https://gist.github.com/86ae316a231bceb96a3e2ab3ac8e646a.git
+>>>>>>> 6fe24622273bd3658f2516d38ec8537a74f1a88f
 =======
 # 161114
 git clone https://gist.github.com/86ae316a231bceb96a3e2ab3ac8e646a.git
