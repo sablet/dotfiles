@@ -12,13 +12,6 @@ export QT_IM_MODULE=fcitx
 #    export CUDA_HOME=/usr/local/cuda
 #}
 
-cat ~/.address|grep university && {
-		alias sudo='sudo -E'
-		export http_proxy="http://proxy.kuins.net:8080"
-		export https_proxy=$http_proxy
-		export ftp_proxy=$http_proxy
-		export ssh_proxy=$http_proxy
-}
     
 export browser='chromium-browser'
 
@@ -27,14 +20,6 @@ export PATH=$PATH:$DOT_DIR/script/shell_script
 export PATH=$PATH:$DOT_DIR/script/python_script
 export GIT_MEMO=$DOT_DIR/etc/gitmemo
 export APT_MEMO=$DOT_DIR/etc/aptmemo
-
-grep chromebook $HOME/.address > /dev/null || {
-    export PATH=$PATH:$HOME/anaconda3/bin
-}
-
-grep chromebook $HOME/.address > /dev/null && {
-    export PATH=$PATH:$HOME/miniconda3/bin
-}
 
 # ruby class config
 export RUBYLIB=$HOME/ruby-class/lib
